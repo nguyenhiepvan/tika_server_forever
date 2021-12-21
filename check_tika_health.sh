@@ -9,9 +9,7 @@ RESPONSE=$(curl -m 5 --write-out "%{http_code}\n" --silent --output /dev/null ${
 if [ "$RESPONSE" != '200' ]
 then
     echo Restarting tika
-    pm2 delete "tika_server"
-    # shellcheck disable=SC2046
-    cd $(pwd) && pm2 start pm2.yml
+    cd $(pwd) && pm2 restart pm2.yml
 else
     echo tika_server is running normally
 fi
