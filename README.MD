@@ -12,7 +12,7 @@ pm2 start pm2.yml
 - Tika server will be start at `http://127.0.0.1:9998`
 - Add cronjob
 ```
-* * * * * /bin/sh [ROOT-TIKA]/check_tika_health.sh >> /dev/null 2>&1
+* * * * * cd [ROOT-TIKA] && /bin/sh ./check_tika_health.sh >> /dev/null 2>&1
 ```
 ## Requirements
 - Java
