@@ -17,3 +17,6 @@ pm2 start pm2.yml
 ## Requirements
 - Java
 - Pm2
+- tesseract
+- tesseract-lang
+- ghostscript
