@@ -15,8 +15,12 @@ pm2 start pm2.yml
 * * * * * cd [ROOT-TIKA] && /bin/sh ./check_tika_health.sh >> /dev/null 2>&1
 ```
 ## Requirements
+
+### Rmeta Only
 - Java
 - Pm2
+
+### OCR
 - tesseract
 - tesseract-lang
 - ghostscript
